@@ -16,7 +16,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     background: #FFFFFF;
-    padding: 1px 1%;
+    padding: 0px 1%;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -47,26 +47,36 @@ nav {
 }
 
 .nav-left ul li img {
-    margin: 0 2px -5px;
+    margin: -20px 0px -15px;
     cursor: pointer;
 }
 
-.nav-center ul li {
-    list-style: none;
-    display: inline-block
+
+.nav-center button{
+    border: none;
+    padding: 10px;
+    background-color: transparent;
 }
 
-.nav-center ul li img {
-    width: 32px;
-    height: 32px;
-    margin: 0 30px -5px;
+.nav-center button:first-child {
+    border-bottom: 4px solid #4a90e2;
+}
+
+.nav-center button:hover{
+    background: #eff0f3;
+    border-radius: 4px;
+    
+}
+
+.nav-center button img {
+    width: 28px;
+    height: 28px;
+    margin: 2px 30px -5px;
     cursor: pointer;
+
 }
 
-.nav-center ul li:first-child img{
-    border-bottom: 4px solid rgb(0, 89, 255);
-    border-spacing: 20px;
-}
+
 
 
 .nav-user-icon img {
@@ -83,11 +93,20 @@ nav {
 
 .search-box {
     background: #efefef;
-    width: 250px;
+    width: 220px;
     border-radius: 20px;
     display: flex;
     align-items: center;
-    padding: 0 15px;
+    padding: 2px 15px;
+}
+
+.write-post-search-box {
+    background: #efefef;
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 2px 15px;
 }
 
 .search-box img {
@@ -99,6 +118,7 @@ nav {
     background: transparent;
     padding: 10px;
     outline: none;
+    font-size: 15px;
     border: 0
 }
 
@@ -134,7 +154,7 @@ content:'' is a must
     height: 7px;
     background: red;
     border: 2px solid #fff;
-    top: 2px;
+    top:-12px;
     right: 8px;
 }
 
@@ -210,7 +230,6 @@ content:'' is a must
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 25px 0;
     color: #626262;
 }
 
@@ -218,7 +237,6 @@ content:'' is a must
     margin: 0 5px;
     cursor: pointer;
     width: 25px;
-
 }
 
 .contacts-ul li:nth-child(2) img {
@@ -235,8 +253,8 @@ content:'' is a must
 .sponsored p,
 .contacts p,
 .pages p,
-.contacts-title {
-    margin: 15px 0;
+.contacts-title p {
+    margin: 10px 0;
     color: #626262;
     font-weight: 500;
 }
@@ -336,8 +354,64 @@ content:'' is a must
     width: 80%;
     background: #fff;
     border-radius: 6px;
-    padding: 20px;
+    padding: 10px 20px;
     columns: #626262;
+}
+
+.create-room {
+    margin-top: 20px;
+    margin-left: 40px;
+    width: 80%;
+    background: #fff;
+    border-radius: 6px;
+    padding: 10px 20px;
+    columns: #626262;
+    display: flex;
+    align-items: center;
+}
+
+.create-room p{
+    padding: 0;
+    margin: 5px 0 0 0;
+}
+
+.create-room img {
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.create-room button{
+    color: #4387e6;
+    font-weight: bold;
+    background-color: transparent;
+    border: 1px solid #bfd0e7;
+    border-radius:20px;
+    padding: 8px 15px 10px 15px;
+    margin-right: 50px;
+    display: inline-flex;
+    align-items: center;
+    width:200px;
+    cursor: pointer;
+}
+
+.create-room button img{
+    width: 20px;
+    border-radius:0
+}
+
+
+.write-post-container hr{
+    border: 1px solid #efefef;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.post-container hr {
+    border: 1px solid #efefef;
+    margin-top: 20px;
+    width: 100%;
 }
 
 .user-profile {
@@ -362,9 +436,16 @@ content:'' is a must
     font-size: 12px;
 }
 
+.user-profile input{
+    width: 100%;
+    background: transparent;
+    padding: 10px;
+    outline: none;
+    font-size: 15px;
+    border: 0
+}
 .post-input-container {
-    padding-left: 55px;
-    padding-top: 20px;
+    padding-left: 30px;
 }
 
 .post-input-container textarea {
@@ -393,7 +474,7 @@ content:'' is a must
 }
 
 .add-post-links a img {
-    width: 20px;
+    width: 30px;
     margin-right: 10px;
 }
 
@@ -564,7 +645,7 @@ content:'' is a must
 }
 
 .pd-bottom{
-    padding-bottom: 5px;
+    
     position: relative;
 }
 .pd-bottom a {
@@ -593,6 +674,11 @@ content:'' is a must
     border: 0;
     outline: 0;
     align-items: center;
+}
+
+.pd-bottom button:first-child{
+    color:#4a90e2;
+    border-bottom: 3px solid #4a90e2;
 }
 
 .pd-bottom button:hover{
@@ -706,7 +792,7 @@ content:'' is a must
     border-radius: 6px;
     padding: 1px 20px 1px 20px;
     color: #626262;
-    margin:20px 40px;
+    margin:0px 40px;
     
 }
 
@@ -750,28 +836,25 @@ content:'' is a must
 }
 
 
-@media (max-width: 501px) {
+@media screen and (max-width: 500px) and (min-width:0px) {
    
-    .pd-right button{
-       width: 8em;
-    }
-}
-
-
-@media (max-width: 700px) {
 
     nav {
         padding: 1px 0
     }
 
     .nav-center,
-    .search-box,
+    
     .left-sidebar,
     .right-sidebar,
     .nav-user-name,
     .story5,
     .nav-user-icon {
         display: none
+    }
+
+    .search-box{
+        width:18px;
     }
 
     .story-gallery {
@@ -786,22 +869,22 @@ content:'' is a must
     }
 
     .profile-intro{
-        width: 80%;
+        width: auto;
         background: #fff;
         border-radius: 6px;
         padding: 20px;
         color: #626262;
-        margin:20px auto;
+        margin:20px 15px auto 15px;
     }
 
 
     .post-container {
-        width: 80%;
+        width: auto;
         background: #fff;
         border-radius: 6px;
         padding: 20px;
         color: #626262;
-        margin:20px auto;
+        margin:20px 15px auto 15px;
     }
 
     .post-input-container {
@@ -825,8 +908,8 @@ content:'' is a must
     }
 
     .post-filter{
-        width: 80%;
-        margin: 20px auto;
+        width: auto;
+        margin:20px 15px auto 15px;
     }
 
     .profile-details{
@@ -858,54 +941,243 @@ content:'' is a must
     }
     
     .write-post-container {
-        width: 80%;
+        width: auto;
         background: #fff;
         border-radius: 6px;
         padding: 20px;
         color: #626262;
-        margin: auto;
+        margin: 20px 0;
     }
 
+    .create-room {
+        margin: 20px 0;
+        width: auto;
+        background: #fff;
+        border-radius: 6px;
+        padding: 10px 20px;
+    }
+
+    .create-room button{
+        color: #4387e6;
+        font-weight: bold;
+        background-color: transparent;
+        border: 1px solid #bfd0e7;
+        border-radius:20px;
+        padding: 8px 15px 10px 15px;
+        margin-right: 10px;
+        display: inline-flex;
+        align-items: center;
+        width:150px;
+        
+    }
+
+    
+    .create-room button img{
+        width: 20px;
+        border-radius:0
+    }
+    
+    .pd-right button{
+       width: 200px;
+    }
+
+    .pd-right button img{
+        margin-left: 50px;
+    }
+
+}
+
+
+@media screen and (max-width: 700px) and (min-width:501px) {
+
+    nav {
+        padding: 1px 0
+    }
+
+    .nav-center,
+    
+    .left-sidebar,
+    .right-sidebar,
+    .nav-user-name,
+    .story5,
+    .nav-user-icon {
+        display: none
+    }
+
+    .search-box{
+        width:18px;
+    }
+
+    .story-gallery {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .main-content {
+        justify-content: space-around;
+        flex-basis: 0;
+        margin: auto
+    }
+
+    .profile-intro{
+        width: auto;
+        background: #fff;
+        border-radius: 6px;
+        padding: 20px;
+        color: #626262;
+        margin:20px 15px auto 15px;
+    }
+
+
+    .post-container {
+        width: auto;
+        background: #fff;
+        border-radius: 6px;
+        padding: 20px;
+        color: #626262;
+        margin:20px 15px auto 15px;
+    }
+
+    .post-input-container {
+        padding-left: 5px
+    }
+
+    
+   
+    .profile-container{
+        padding: 2px 0 0 0;
+        
+    }
+
+    .profile-info{
+        display:block;
+    }
+
+    .pd-bottom button:nth-child(5),
+    .pd-bottom button:nth-child(6){
+        display: none;
+    }
+
+    .post-filter{
+        width: auto;
+        margin:20px 15px auto 15px;
+    }
+
+    .profile-details{
+        display: block;
+    }
+
+    .pd-row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .pd-row div{
+        text-align: center;
+    }
+    
+    .pd-right{
+        text-align: center;
+        margin-top: 15px;
+    }
+
+  
+
+    .pd-right button{
+        text-align: center;
+    }
+    
+    .write-post-container {
+        width: auto;
+        background: #fff;
+        border-radius: 6px;
+        padding: 20px;
+        color: #626262;
+        margin: 20px 0;
+    }
+
+    .create-room {
+        margin: 20px 0;
+        width: auto;
+        background: #fff;
+        border-radius: 6px;
+        padding: 10px 20px;
+    }
+
+    .create-room button{
+        color: #4387e6;
+        font-weight: bold;
+        background-color: transparent;
+        border: 1px solid #bfd0e7;
+        border-radius:20px;
+        padding: 8px 15px 10px 15px;
+        margin-right: 10px;
+        display: inline-flex;
+        align-items: center;
+        width:150px;
+        
+    }
+
+    
+
+    
+    .create-room button img{
+        width: 20px;
+        border-radius:0
+    }
+    
     
    
 
 
 }
 
-@media (max-width: 900px){
+@media screen and (max-width: 900px) and (min-width: 700px){
 
     nav {
-        padding: 1px 0
+        margin-bottom: -2px
     }
-
-    .search-box,
+  
     .left-sidebar,
     .right-sidebar,
     .nav-user-name,
     .nav-user-icon {
         display: none
     }
-    
-    .nav-center ul li img {
-        width: 35px;
-        height: 35px;
-        margin: 0 20px -5px 30px
+
+    .search-box{
+        width:18px;
     }
 
+    .nav-center{
+        margin-left:60px;
+    }
+    .nav-center button{
+        margin-left:10px;
+    }
+    
+    .nav-center button img {
+        margin: 2px 10px -5px;
+    }
+
+    /*
     .post-filter{
         width: 80%;
         margin: 20px auto;
     }
-
+    */
     .profile-intro{
-        width: 80%;
+        width: auto;
         background: #fff;
         border-radius: 6px;
         padding: 20px;
         color: #626262;
-        margin:20px auto;
+        margin:20px 15px auto 15px;
     }
 
+    
     .write-post-container {
         width: 80%;
         background: #fff;
@@ -927,7 +1199,7 @@ content:'' is a must
         margin: auto
     }
 
-
+    /*
     .post-container {
         width: 80%;
         background: #fff;
@@ -936,7 +1208,17 @@ content:'' is a must
         color: #626262;
         margin-left: auto;
     }
+    */
+/*
+    .create-room img:nth-child(2){
+        margin-left: 30px;       
+    }
+    */
 
+    .create-room button{
+        width:200px;
+    }
+  
     .post-input-container {
         padding-left: 5px
     }
@@ -950,10 +1232,7 @@ content:'' is a must
         display:block;
     }
    
-    .post-filter{
-        width: 80%;
-        margin: 20px auto;
-    }
+
 
     .profile-details{
         display: block;
@@ -985,18 +1264,31 @@ content:'' is a must
 
 }
 
-@media (max-width: 925px){
+@media screen and (max-width: 925px) and (min-width:900px){
 
     nav {
-        padding: 1px 0
+        margin-bottom: -2px
     }
-
-    .search-box,
+    .nav-center{
+        margin-left:60px;
+    }
+    .nav-center button{
+        margin-left:20px;
+    }
+    
+    .nav-center button img {
+        margin: 2px 10px -5px;
+    }
+    
     .left-sidebar,
-    .right-sidebar,
+    
     .nav-user-name,
     .nav-user-icon {
         display: none
+    }
+
+    .search-box{
+        width:18px;
     }
     
     .nav-center ul li img {
@@ -1005,20 +1297,23 @@ content:'' is a must
         margin: 0 20px -5px 30px
     }
 
+    
     .post-filter{
         width: 80%;
         margin: 20px auto;
     }
-
+    
+    
     .profile-intro{
         width: 80%;
         background: #fff;
         border-radius: 6px;
         padding: 20px;
         color: #626262;
-        margin:20px auto;
+        margin:20px auto
     }
 
+    
     .write-post-container {
         width: 80%;
         background: #fff;
@@ -1027,7 +1322,6 @@ content:'' is a must
         color: #626262;
         margin: auto;
     }
-
 
     .story-gallery {
         display: flex;
@@ -1040,15 +1334,16 @@ content:'' is a must
         margin: auto
     }
 
-
+    
     .post-container {
         width: 80%;
         background: #fff;
         border-radius: 6px;
         padding: 20px;
         color: #626262;
-        margin: 20 auto;
+        margin: 20px auto;
     }
+    
 
     .post-input-container {
         padding-left: 5px
@@ -1063,22 +1358,39 @@ content:'' is a must
         display:block;
     }
 
+    .create-room button{
+        width:200px;
+    }
+
     
 }
 
 
 
-@media (max-width: 1100px) {
+@media screen and (max-width: 1100px) and (min-width: 925px) {
     nav {
-        padding: 1px 0
+        margin-bottom: -2px
     }
-
-    .search-box,
+    
     .left-sidebar,
     
     .nav-user-name,
     .nav-user-icon {
         display: none
+    }
+
+    .nav-center{
+        margin-left:60px;
+    }
+    .nav-center button{
+        margin-left:20px;
+    }
+    
+    .nav-center button img {
+        margin: 2px 10px -5px;
+    }
+    .search-box{
+        width:18px;
     }
     
     .nav-center ul li img {
@@ -1087,7 +1399,7 @@ content:'' is a must
         margin: 0 20px -5px 30px
     }
 
-
+    /*
     .write-post-container {
         width: 80%;
         background: #fff;
@@ -1096,7 +1408,7 @@ content:'' is a must
         color: #626262;
         margin: auto; 
     }
-
+*/
 
     .story-gallery {
         display: flex;
@@ -1110,18 +1422,17 @@ content:'' is a must
     }
 
     .profile-container{
-        padding: 2px 0 0 20px;
+        padding: 2px 0 0 0;
     }
 
-
+    
     .post-filter{
         width: 80%;
         margin: 20px auto; 
     }
+    
 
-
-
-
+    
     .post-container {
         width: 80%;
         background: #fff;
@@ -1130,20 +1441,23 @@ content:'' is a must
         color: #626262;
         margin: 20px auto; 
     }
-
     
+    .create-room button{
+        width:200px;
+    }
 
     .post-input-container {
         padding-left: 5px
     }
 
-}
-
-@media (max-width: 1260px) {
-    .nav-user-icon,
-    .nav-user-icon,
-    .search-box {
-        display: none
+    .profile-intro{
+        margin-left:20px;
     }
 
+}
+
+@media screen and (max-width: 1260px) and (min-width: 1100px) {
+    .search-box{
+        width:18px;
+    }
 }

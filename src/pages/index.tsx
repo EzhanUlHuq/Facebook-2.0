@@ -1,9 +1,7 @@
 import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
 import { useRouter } from 'next/router'
 import Landing from '../layouts/Landing'
-import styles from '../styles/Home.module.css'
+import Footer from "../components/Footer/Footer"
 
 const Home: NextPage = () => {
   const router = useRouter()
@@ -57,20 +55,27 @@ const Home: NextPage = () => {
           <div className="write-post-container">
             <div className="user-profile">
               <img src="Images/profile-pic.png" />
-              <div>
-                <p>Ezhan Ul Huq</p>
-                <small>Public <i className="fas fa-caret-down"></i></small>
+              <div className="write-post-search-box">
+                <input type = 'text' placeholder = "What's on your mind Azhan?" />
               </div>
             </div>
-
+            <hr />
             <div className="post-input-container">
-              <textarea rows="3" placeholder="What's on your mind, Ezhan?"></textarea>
               <div className="add-post-links">
-                <a href="#"><img src="Images/live-video.png" />Live Video</a>
-                <a href="#"><img src="Images/photo.png" />Photo/Video</a>
+                <a href="#"><img src="Images/facebook-livevideo-2.png" />Live Video</a>
+                <a href="#"><img src="Images/facebook-photos-2.png" />Photo/Video</a>
                 <a href="#"><img src="Images/feeling.png" />Feeling/Activity</a>
               </div>
             </div>
+          </div>
+
+          <div className="create-room">
+            <button><img src = "Images/facebook-createroom-2.png" /><p>Create Room</p></button>
+            <img src = "Images/member-1.png"/>
+            <img src = "Images/member-2.png"/>
+            <img src = "Images/member-3.png"/>
+            <img src = "Images/member-4.png"/>
+            <img src = "Images/member-5.png"/>
           </div>
 
           <div className="post-container">
@@ -82,7 +87,7 @@ const Home: NextPage = () => {
                   <small>March 19 2022, 13:40</small>
                 </div>
               </div>
-              <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+              <a href="#"></a>
             </div>
             <p className = 'post-text'>Trying my best to redeem my self at Deltacron and rise from the ashes wish me luck!
             <br />
@@ -91,7 +96,7 @@ const Home: NextPage = () => {
             <a href="#">#LearningCSS</a>
             </p>
             <img src="Images/feed-image-1.png" className ="post-img"/>
-
+            <hr />
             <div className="post-row">
               <div className="activity-icons">
                 <div><img src="Images/like-blue.png"/> 120</div>
@@ -113,7 +118,7 @@ const Home: NextPage = () => {
                   <small>March 11 2022, 11:40</small>
                 </div>
               </div>
-              <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+              <a href="#"></a>
             </div>
             <p className = 'post-text'>Enjoying a nice sunset at the beach with friends
             <br />
@@ -122,7 +127,7 @@ const Home: NextPage = () => {
             <a href="#">#Friends</a>
             </p>
             <img src="Images/feed-image-2.png" className ="post-img"/>
-
+            <hr />
             <div className="post-row">
               <div className="activity-icons">
                 <div><img src="Images/like.png"/> 20</div>
@@ -144,7 +149,7 @@ const Home: NextPage = () => {
                   <small>March 19 2022, 13:40</small>
                 </div>
               </div>
-              <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+              <a href="#"></a>
             </div>
             <p className = 'post-text'>It is back to Uni Time this time ill graduate for sure!
             <br />
@@ -153,7 +158,7 @@ const Home: NextPage = () => {
             <a href="#">#Friends</a>
             </p>
             <img src="Images/feed-image-3.png" className ="post-img"/>
-
+            <hr />
             <div className="post-row">
               <div className="activity-icons">
                 <div><img src="Images/like-blue.png"/> 30</div>
@@ -212,9 +217,7 @@ const Home: NextPage = () => {
             </div>
         </div>
       </div>
-      <div className="footer">
-        <p>Copyright 2022 - Ezhan Ul Huq Deltacron</p>
-      </div>
+     <Footer />
     </Landing>
   )
 }

@@ -1,9 +1,8 @@
 import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
 import { useRouter } from 'next/router'
 import Landing from '../layouts/Landing'
-import styles from '../styles/Home.module.css'
+import Footer from '../components/Footer/Footer'
+
 
 const Profile: NextPage = () => {
   const router = useRouter()
@@ -99,25 +98,7 @@ const Profile: NextPage = () => {
             </div>
           </div>
           <div className="post-col">
-            
-          <div className="write-post-container">
-            <div className="user-profile">
-              <img src="Images/profile-pic.png" />
-              <div>
-                <p>Ezhan Ul Huq</p>
-                <small>Public <i className="fas fa-caret-down"></i></small>
-              </div>
-            </div>
-
-            <div className="post-input-container">
-              <textarea rows="3" placeholder="What's on your mind, Ezhan?"></textarea>
-              <div className="add-post-links">
-                <a href="#"><img src="Images/live-video.png" />Live Video</a>
-                <a href="#"><img src="Images/photo.png" />Photo/Video</a>
-                <a href="#"><img src="Images/feeling.png" />Feeling/Activity</a>
-              </div>
-            </div>
-          </div>
+        
 
           <div className="post-filter">
             <h3>Post</h3>
@@ -134,7 +115,7 @@ const Profile: NextPage = () => {
                   <small>March 19 2022, 13:40</small>
                 </div>
               </div>
-              <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+              <a href="#"></a>
             </div>
             <p className = 'post-text'>Trying my best to redeem my self at Deltacron and rise from the ashes wish me luck!
             <br />
@@ -143,7 +124,7 @@ const Profile: NextPage = () => {
             <a href="#">#LearningCSS</a>
             </p>
             <img src="Images/feed-image-1.png" className ="post-img"/>
-
+            <hr />
             <div className="post-row">
               <div className="activity-icons">
                 <div><img src="Images/like-blue.png"/> 120</div>
@@ -166,7 +147,7 @@ const Profile: NextPage = () => {
                   <small>March 11 2022, 11:40</small>
                 </div>
               </div>
-              <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+              <a href="#"></a>
             </div>
             <p className = 'post-text'>Enjoying a nice sunset at the beach with friends
             <br />
@@ -175,7 +156,7 @@ const Profile: NextPage = () => {
             <a href="#">#Friends</a>
             </p>
             <img src="Images/feed-image-2.png" className ="post-img"/>
-
+            <hr />
             <div className="post-row">
               <div className="activity-icons">
                 <div><img src="Images/like.png"/> 20</div>
@@ -197,7 +178,7 @@ const Profile: NextPage = () => {
                   <small>March 19 2022, 13:40</small>
                 </div>
               </div>
-              <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+              <a href="#"></a>
             </div>
             <p className = 'post-text'>It is back to Uni Time this time ill graduate for sure!
             <br />
@@ -206,7 +187,7 @@ const Profile: NextPage = () => {
             <a href="#">#Friends</a>
             </p>
             <img src="Images/feed-image-3.png" className ="post-img"/>
-
+            <hr />
             <div className="post-row">
               <div className="activity-icons">
                 <div><img src="Images/like-blue.png"/> 30</div>
@@ -222,9 +203,7 @@ const Profile: NextPage = () => {
           </div>
         </div>
       </div>
-      <div className="footer">
-        <p>Copyright 2022 - Ezhan Ul Huq Deltacron</p>
-      </div>
+      <Footer />
     </Landing>
   )
 }

@@ -1,10 +1,26 @@
 import React, { useState } from 'react';
-import Image from 'next/image';
+import { useRouter } from 'next/router'
+
 
 
 
 var Navbar = () => {
 
+    const router = useRouter()
+    console.log(router.pathname)
+    const param = () =>{
+        if(router.pathname === "/profile"){
+            console.log("abc")
+            return(<button type = "button" style={{border : "none"}}><img src = '/Images/facebook-home-9.png' /></button>)
+            
+        }
+        else if(router.pathname === "/"){
+            console.log("bcd")
+            return(<button type = "button"><img src = '/Images/facebook-home-6.png' /></button>)
+        }
+
+    }
+    
 
     return(
         <>
@@ -13,17 +29,14 @@ var Navbar = () => {
                     <img src = '/Images/facebook-logo.png' className = 'logo' />
                     <div className="search-box">
                         <img src="/Images/search.png" />
-                        <input type = 'text' placeholder = 'Search' />
+                        <input type = 'text' placeholder = 'Search Facebook' />
                     </div>
-                  
                 </div>
                 <div className="nav-center">
-                    <ul>
-                        <li><img src = '/Images/facebook-home.png' /></li>
-                        <li><img src = '/Images/facebook-friends.png' /></li>
-                        <li><img src = '/Images/facebook-groups.png' /></li>
-                        <li><img src = '/Images/facebook-gaming.png' /></li>
-                    </ul>
+                    {param()}
+                    <button type = "button"><img src = '/Images/facebook-watch-3.png' /></button>
+                    <button type = "button"><img src = '/Images/facebook-marketplace-2.png' /></button>
+                    <button type = "button"><img src = '/Images/facebook-gaming-4.png' /></button>
                 </div>
                 <div className="nav-left">
                         <div className = 'nav-user-icon online'>
