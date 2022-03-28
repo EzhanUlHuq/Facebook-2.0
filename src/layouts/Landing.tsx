@@ -14,7 +14,8 @@ const  Landing = ({ children, header,}: any) => {
       <Head>
         <title>Facebook 2.0</title>
         <meta name='description' content='Facebook web' />
-        <link rel='icon' href='/favicon.ico'  />
+        <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+       
       </Head>
       <Navbar />
       {

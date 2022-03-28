@@ -6,6 +6,10 @@ body {
     background: #f0f2f5
 }
 
+.favicon{
+    width:50px;
+    height:50px;
+}
 
 nav {
     display: flex;
@@ -53,11 +57,18 @@ nav {
 }
 
 .nav-center ul li img {
-    width: 45px;
-    height: 45px;
+    width: 32px;
+    height: 32px;
     margin: 0 30px -5px;
     cursor: pointer;
 }
+
+.nav-center ul li:first-child img{
+    border-bottom: 4px solid rgb(0, 89, 255);
+    border-spacing: 20px;
+}
+
+
 .nav-user-icon img {
     width: 40px;
     border-radius: 50%;
@@ -225,7 +236,7 @@ content:'' is a must
 .contacts p,
 .pages p,
 .contacts-title {
-    margin: 25px 0;
+    margin: 15px 0;
     color: #626262;
     font-weight: 500;
 }
@@ -465,7 +476,7 @@ content:'' is a must
 
 
 .profile-container {
-    padding: 20px 15%;
+    padding: 2px 15%;
     color: #626262;
 
 }
@@ -473,7 +484,6 @@ content:'' is a must
 .cover-img {
     width: 100%;
     border-radius: 6px;
-    margin-bottom: 14px;
 }
 
 .profile-details {
@@ -485,6 +495,10 @@ content:'' is a must
     justify-content: space-between
 }
 
+.profile-info-container{
+    background: #fff;
+    width: 100%;
+}
 
 .pd-row {
     display: flex;
@@ -493,20 +507,22 @@ content:'' is a must
 }
 
 .pd-image {
-    width: 100px;
+    width: 180px;
     margin-right: 20px;
-    border-radius: 6px;
-
+    border: 5px solid #fff;
+    border-radius: 50%;
+    margin-top: -100px
 }
 
 .pd-row div h3 {
-    font-size: 25px;
+    font-size: 35px;
     font-weight: 600;
     margin: 0;
 }
 
 .pd-row div p {
-    font-size: 13px;
+    font-size: 18px;
+    font-weight: bold;
     margin: 0;
 }
 
@@ -524,7 +540,9 @@ content:'' is a must
     display: inline-flex;
     align-items: center;
     color: #fff;
-    border-radius: 3px;
+    border-radius: 5px;
+    width:100px;
+    height:35px;
     margin-left: 10px;
     cursor: pointer;
 }
@@ -541,19 +559,45 @@ content:'' is a must
 }
 
 .pd-right {
-    text-align: right
+    text-align: right;
+    margin-top: 80px
 }
 
-.pd-right a {
+.pd-bottom{
+    padding-bottom: 5px;
+    position: relative;
+}
+.pd-bottom a {
+    position: absolute;
     background: #e4e6eb;
     border-radius: 3px;
     padding: 12px;
     display: inline-flex;
-    margin-top: 30px;
+    right: 0;
+    bottom:15px;
+    margin-right:20px;
+
 }
 
-.pd-right a img {
+.pd-bottom a img {
     width: 20px
+}
+.pd-bottom button{
+    background: transparent;
+    border: none;
+    color: grey;
+    font-weight: 700;
+    width: 80px;
+    height: 45px;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    align-items: center;
+}
+
+.pd-bottom button:hover{
+    background: #eff0f3;
+    border-radius: 4px;
 }
 
 .profile-info {
@@ -654,6 +698,41 @@ content:'' is a must
     margin-top: 15px;
 }
 
+.post-filter{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    background: #fff;
+    border-radius: 6px;
+    padding: 1px 20px 1px 20px;
+    color: #626262;
+    margin:20px 40px;
+    
+}
+
+
+
+.post-filter button{
+    background: #e4e6eb;
+    color: #000;
+    border: 0;
+    outline: 0;
+    padding: 6px 20px;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 5px;
+    width:100px;
+    height:35px;
+    margin-left: 280px;
+    margin-top: 13px;
+    cursor: pointer;
+}
+
+.post-filter button img{
+    height: 15px;
+    margin-right: 10px;
+}
+
 .friends-box div img {
     width: 100%;
     cursor: pointer;
@@ -671,7 +750,15 @@ content:'' is a must
 }
 
 
-@media(max-width: 700px) {
+@media (max-width: 501px) {
+   
+    .pd-right button{
+       width: 8em;
+    }
+}
+
+
+@media (max-width: 700px) {
 
     nav {
         padding: 1px 0
@@ -682,10 +769,142 @@ content:'' is a must
     .left-sidebar,
     .right-sidebar,
     .nav-user-name,
+    .story5,
     .nav-user-icon {
         display: none
     }
 
+    .story-gallery {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .main-content {
+        justify-content: space-around;
+        flex-basis: 0;
+        margin: auto
+    }
+
+    .profile-intro{
+        width: 80%;
+        background: #fff;
+        border-radius: 6px;
+        padding: 20px;
+        color: #626262;
+        margin:20px auto;
+    }
+
+
+    .post-container {
+        width: 80%;
+        background: #fff;
+        border-radius: 6px;
+        padding: 20px;
+        color: #626262;
+        margin:20px auto;
+    }
+
+    .post-input-container {
+        padding-left: 5px
+    }
+
+    
+   
+    .profile-container{
+        padding: 2px 0 0 0;
+        
+    }
+
+    .profile-info{
+        display:block;
+    }
+
+    .pd-bottom button:nth-child(5),
+    .pd-bottom button:nth-child(6){
+        display: none;
+    }
+
+    .post-filter{
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .profile-details{
+        display: block;
+    }
+
+    .pd-row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .pd-row div{
+        text-align: center;
+    }
+    
+    .pd-right{
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .pd-right button{
+        width: 20%;
+    }
+
+    .pd-right button{
+        text-align: center;
+    }
+    
+    .write-post-container {
+        width: 80%;
+        background: #fff;
+        border-radius: 6px;
+        padding: 20px;
+        color: #626262;
+        margin: auto;
+    }
+
+    
+   
+
+
+}
+
+@media (max-width: 900px){
+
+    nav {
+        padding: 1px 0
+    }
+
+    .search-box,
+    .left-sidebar,
+    .right-sidebar,
+    .nav-user-name,
+    .nav-user-icon {
+        display: none
+    }
+    
+    .nav-center ul li img {
+        width: 35px;
+        height: 35px;
+        margin: 0 20px -5px 30px
+    }
+
+    .post-filter{
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .profile-intro{
+        width: 80%;
+        background: #fff;
+        border-radius: 6px;
+        padding: 20px;
+        color: #626262;
+        margin:20px auto;
+    }
 
     .write-post-container {
         width: 80%;
@@ -693,7 +912,7 @@ content:'' is a must
         border-radius: 6px;
         padding: 20px;
         color: #626262;
-        margin-left: 30px;
+        margin: auto;
     }
 
 
@@ -715,17 +934,58 @@ content:'' is a must
         border-radius: 6px;
         padding: 20px;
         color: #626262;
-        margin-left: 30px;
+        margin-left: auto;
     }
 
     .post-input-container {
         padding-left: 5px
     }
+   
+    .profile-container{
+        padding: 2px 0 0 0;
+        
+    }
 
+    .profile-info{
+        display:block;
+    }
+   
+    .post-filter{
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .profile-details{
+        display: block;
+    }
+
+    .pd-row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .pd-row div{
+        text-align: center;
+    }
+    
+    .pd-right{
+        text-align: center;
+        margin-top:15px;
+    }
+
+ 
+
+    .pd-right button{
+        text-align: center;
+    }
+    
+    
 
 }
 
-@media(max-width: 900px) {
+@media (max-width: 925px){
 
     nav {
         padding: 1px 0
@@ -738,12 +998,89 @@ content:'' is a must
     .nav-user-icon {
         display: none
     }
-    nav-center ul li img {
-        width: 45px;
-        height: 45px;
-        margin: 0 30px -5px;
-        cursor: pointer;
+    
+    .nav-center ul li img {
+        width: 35px;
+        height: 35px;
+        margin: 0 20px -5px 30px
     }
+
+    .post-filter{
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .profile-intro{
+        width: 80%;
+        background: #fff;
+        border-radius: 6px;
+        padding: 20px;
+        color: #626262;
+        margin:20px auto;
+    }
+
+    .write-post-container {
+        width: 80%;
+        background: #fff;
+        border-radius: 6px;
+        padding: 20px;
+        color: #626262;
+        margin: auto;
+    }
+
+
+    .story-gallery {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .main-content {
+        justify-content: space-around;
+        flex-basis: 0;
+        margin: auto
+    }
+
+
+    .post-container {
+        width: 80%;
+        background: #fff;
+        border-radius: 6px;
+        padding: 20px;
+        color: #626262;
+        margin: 20 auto;
+    }
+
+    .post-input-container {
+        padding-left: 5px
+    }
+   
+    .profile-container{
+        padding: 2px 0 0 0;
+        
+    }
+
+    .profile-info{
+        display:block;
+    }
+
+    
+}
+
+
+
+@media (max-width: 1100px) {
+    nav {
+        padding: 1px 0
+    }
+
+    .search-box,
+    .left-sidebar,
+    
+    .nav-user-name,
+    .nav-user-icon {
+        display: none
+    }
+    
     .nav-center ul li img {
         width: 35px;
         height: 35px;
@@ -757,7 +1094,7 @@ content:'' is a must
         border-radius: 6px;
         padding: 20px;
         color: #626262;
-        margin-left: 30px;
+        margin: auto; 
     }
 
 
@@ -772,6 +1109,18 @@ content:'' is a must
         margin: auto
     }
 
+    .profile-container{
+        padding: 2px 0 0 20px;
+    }
+
+
+    .post-filter{
+        width: 80%;
+        margin: 20px auto; 
+    }
+
+
+
 
     .post-container {
         width: 80%;
@@ -779,75 +1128,22 @@ content:'' is a must
         border-radius: 6px;
         padding: 20px;
         color: #626262;
-        margin-left: 30px;
+        margin: 20px auto; 
     }
+
+    
 
     .post-input-container {
         padding-left: 5px
     }
 
-};
+}
 
+@media (max-width: 1260px) {
+    .nav-user-icon,
+    .nav-user-icon,
+    .search-box {
+        display: none
+    }
 
-@media(max-width : 1000px) {
-
-  nav {
-      padding: 1px 0
-  }
-
-  .search-box,
-  .left-sidebar,
-  .right-sidebar,
-  .nav-user-name,
-  .nav-user-icon {
-      display: none
-  }
-  nav-center ul li img {
-      width: 45px;
-      height: 45px;
-      margin: 0 30px -5px;
-      cursor: pointer;
-  }
-  .nav-center ul li img {
-      width: 35px;
-      height: 35px;
-      margin: 0 20px -5px 30px
-  }
-
-
-  .write-post-container {
-      width: 80%;
-      background: #fff;
-      border-radius: 6px;
-      padding: 20px;
-      color: #626262;
-      margin-left: 30px;
-  }
-
-
-  .story-gallery {
-      display: flex;
-      justify-content: space-around;
-  }
-
-  .main-content {
-      justify-content: space-around;
-      flex-basis: 0;
-      margin: auto
-  }
-
-
-  .post-container {
-      width: 80%;
-      background: #fff;
-      border-radius: 6px;
-      padding: 20px;
-      color: #626262;
-      margin-left: 30px;
-  }
-
-  .post-input-container {
-      padding-left: 5px
-  }
-
-};
+}

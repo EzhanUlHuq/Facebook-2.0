@@ -172,9 +172,7 @@ const Home: NextPage = () => {
         </div>
 
         <div className="right-sidebar">
-          <div className = 'sponsored'>
-            <p>Sponsored</p>
-          </div>
+         
           <div className = 'pages'>
             <p>Your Pages</p>
               <a href = "#"><img src = "Images/shortcut-1.png"/>Page 1</a>
