@@ -131,8 +131,13 @@ const Profile: NextPage = () => {
                 <div><img src="Images/comments.png"/> 45</div>
                 <div><img src="Images/share.png"/> 20</div>
               </div>
-              <div className="post-profile-icon">
-                <img src="Images/profile-pic.png"/>
+            </div>
+
+            <hr />
+            <div className="user-profile">
+              <img src="Images/profile-pic.png" />
+              <div className="write-post-search-box">
+                <input type = 'text' placeholder = "Write a comment..." />
               </div>
             </div>
           </div>
@@ -163,8 +168,12 @@ const Profile: NextPage = () => {
                 <div><img src="Images/comments.png"/> 2</div>
                 <div><img src="Images/share.png"/> 20</div>
               </div>
-              <div className="post-profile-icon">
-                <img src="Images/profile-pic.png"/>
+            </div>
+            <hr />
+            <div className="user-profile">
+              <img src="Images/profile-pic.png" />
+              <div className="write-post-search-box">
+                <input type = 'text' placeholder = "Write a comment..." />
               </div>
             </div>
           </div>
@@ -194,8 +203,12 @@ const Profile: NextPage = () => {
                 <div><img src="Images/comments.png"/> 20</div>
                 <div><img src="Images/share.png"/> 20</div>
               </div>
-              <div className="post-profile-icon">
-                <img src="Images/profile-pic.png"/>
+            </div>
+            <hr />
+            <div className="user-profile">
+              <img src="Images/profile-pic.png" />
+              <div className="write-post-search-box">
+                <input type = 'text' placeholder = "Write a comment..." />
               </div>
             </div>
 
