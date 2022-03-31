@@ -1,23 +1,17 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useRouter } from 'next/router'
 
-
-
-
-var Navbar = () => {
+const Navbar = () => {
 
     const router = useRouter()
     const param = () =>{
         if(router.pathname === "/profile"){
-            
             return(<button type = "button" style={{border : "none"}}><img src = '/Images/facebook-home-9.png' /></button>)
-            
         }
         else if(router.pathname === "/"){
             
             return(<button type = "button"><img src = '/Images/facebook-home-6.png' /></button>)
         }
-
     }
     return(
         <>

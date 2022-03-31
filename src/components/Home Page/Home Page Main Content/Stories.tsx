@@ -25,6 +25,7 @@ const Stories = () => {
             <img src="Images/member-4.png" />
             <p>John Doe</p>
             </div>
+      
         </div>
     )
 }
