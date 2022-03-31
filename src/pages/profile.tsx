@@ -104,8 +104,6 @@ const Profile: NextPage = () => {
             <h3>Post</h3>
             <button type = "button"><img src = "Images/facebook-filter.png"/>Filter</button>
           </div>
-
-
           <div className="post-container">
             <div className="post-row">
               <div className="user-profile">
@@ -124,7 +122,6 @@ const Profile: NextPage = () => {
             <a href="#">#LearningCSS</a>
             </p>
             <img src="Images/feed-image-1.png" className ="post-img"/>
-            <hr />
             <div className="post-row">
               <div className="activity-icons">
                 <div><img src="Images/like-blue.png"/> 120</div>
@@ -132,7 +129,18 @@ const Profile: NextPage = () => {
                 <div><img src="Images/share.png"/> 20</div>
               </div>
             </div>
-
+            <hr />
+            <div className="post-row-buttons">
+              <div className="button-like">
+                <button type = "button"><img src = "Images/facebook-like-2.png" />Like</button>
+              </div>
+              <div className="button-comment">
+                <button type = "button"><img src = "Images/facebook-comment-2.png" />Comment</button>
+              </div>
+              <div className="button-share">
+                <button type = "button"><img src = "Images/facebook-share-2.png" />Share</button>
+              </div>
+            </div>
             <hr />
             <div className="user-profile">
               <img src="Images/profile-pic.png" />
@@ -161,12 +169,24 @@ const Profile: NextPage = () => {
             <a href="#">#Friends</a>
             </p>
             <img src="Images/feed-image-2.png" className ="post-img"/>
-            <hr />
+            
             <div className="post-row">
               <div className="activity-icons">
                 <div><img src="Images/like.png"/> 20</div>
                 <div><img src="Images/comments.png"/> 2</div>
                 <div><img src="Images/share.png"/> 20</div>
+              </div>
+            </div>
+            <hr />
+            <div className="post-row-buttons">
+              <div className="button-like">
+                <button type = "button"><img src = "Images/facebook-like-2.png" />Like</button>
+              </div>
+              <div className="button-comment">
+                <button type = "button"><img src = "Images/facebook-comment-2.png" />Comment</button>
+              </div>
+              <div className="button-share">
+                <button type = "button"><img src = "Images/facebook-share-2.png" />Share</button>
               </div>
             </div>
             <hr />
@@ -183,7 +203,7 @@ const Profile: NextPage = () => {
               <div className="user-profile">
                 <img src="Images/member-2.png" />
                 <div>
-                  <p>Ezhan Ul Huq</p>
+                  <p>Jacob Jack</p>
                   <small>March 19 2022, 13:40</small>
                 </div>
               </div>
@@ -196,12 +216,24 @@ const Profile: NextPage = () => {
             <a href="#">#Friends</a>
             </p>
             <img src="Images/feed-image-3.png" className ="post-img"/>
-            <hr />
+            
             <div className="post-row">
               <div className="activity-icons">
                 <div><img src="Images/like-blue.png"/> 30</div>
                 <div><img src="Images/comments.png"/> 20</div>
                 <div><img src="Images/share.png"/> 20</div>
+              </div>
+            </div>
+            <hr />
+            <div className="post-row-buttons">
+              <div className="button-like">
+                <button type = "button"><img src = "Images/facebook-like-2.png" />Like</button>
+              </div>
+              <div className="button-comment">
+                <button type = "button"><img src = "Images/facebook-comment-2.png" />Comment</button>
+              </div>
+              <div className="button-share">
+                <button type = "button"><img src = "Images/facebook-share-2.png" />Share</button>
               </div>
             </div>
             <hr />

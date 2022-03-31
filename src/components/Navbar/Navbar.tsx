@@ -7,21 +7,18 @@ import { useRouter } from 'next/router'
 var Navbar = () => {
 
     const router = useRouter()
-    console.log(router.pathname)
     const param = () =>{
         if(router.pathname === "/profile"){
-            console.log("abc")
+            
             return(<button type = "button" style={{border : "none"}}><img src = '/Images/facebook-home-9.png' /></button>)
             
         }
         else if(router.pathname === "/"){
-            console.log("bcd")
+            
             return(<button type = "button"><img src = '/Images/facebook-home-6.png' /></button>)
         }
 
     }
-    
-
     return(
         <>
             <nav>

@@ -31,8 +31,10 @@ const Home: NextPage = () => {
         <div className="main-content">
           <div className="story-gallery">
             <div className="story story1">
-              <img src="Images/upload.png" />
-              <p>Post Story</p>
+              <div className="create-story">
+                <img src="Images/upload.png" />
+                <p>Create Story</p>
+              </div>
             </div>
             <div className="story story2">
               <img src="Images/member-1.png" />
@@ -55,16 +57,16 @@ const Home: NextPage = () => {
           <div className="write-post-container">
             <div className="user-profile">
               <img src="Images/profile-pic.png" />
-              <div className="write-post-search-box">
-                <input type = 'text' placeholder = "What's on your mind Azhan?" />
+              <div className="write-post-input-box">
+                <input type = 'text' placeholder = "What's on your mind, Azhan?" />
               </div>
             </div>
             <hr />
             <div className="post-input-container">
               <div className="add-post-links">
-                <a href="#"><img src="Images/facebook-livevideo-2.png" />Live Video</a>
-                <a href="#"><img src="Images/facebook-photos-2.png" />Photo/Video</a>
-                <a href="#"><img src="Images/feeling.png" />Feeling/Activity</a>
+                <button type = "button"><img src="Images/facebook-livevideo-2.png" />Live Video</button>
+                <button type = "button"><img src="Images/facebook-photos-2.png" />Photo/Video</button>
+                <button type = "button"><img src="Images/feeling.png" />Feeling/Activity</button>
               </div>
             </div>
           </div>
@@ -78,7 +80,7 @@ const Home: NextPage = () => {
             <img src = "Images/member-5.png"/>
           </div>
 
-          <div className="post-container">
+          <div className="home-post-container">
             <div className="post-row">
               <div className="user-profile">
                 <img src="Images/profile-pic.png" />
@@ -96,12 +98,23 @@ const Home: NextPage = () => {
             <a href="#">#LearningCSS</a>
             </p>
             <img src="Images/feed-image-1.png" className ="post-img"/>
-            <hr />
             <div className="post-row">
               <div className="activity-icons">
                 <div><img src="Images/like-blue.png"/> 120</div>
                 <div><img src="Images/comments.png"/> 45</div>
                 <div><img src="Images/share.png"/> 20</div>
+              </div>
+            </div>
+            <hr />
+            <div className="post-row-buttons">
+              <div className="button-like">
+                <button type = "button"><img src = "Images/facebook-like-2.png" />Like</button>
+              </div>
+              <div className="button-comment">
+                <button type = "button"><img src = "Images/facebook-comment-2.png" />Comment</button>
+              </div>
+              <div className="button-share">
+                <button type = "button"><img src = "Images/facebook-share-2.png" />Share</button>
               </div>
               <div className="post-profile-icon">
                 <img src="Images/profile-pic.png"/>
@@ -109,7 +122,7 @@ const Home: NextPage = () => {
             </div>
           </div>
 
-          <div className="post-container">
+          <div className="home-post-container">
             <div className="post-row">
               <div className="user-profile">
                 <img src="Images/member-1.png" />
@@ -134,13 +147,25 @@ const Home: NextPage = () => {
                 <div><img src="Images/comments.png"/> 2</div>
                 <div><img src="Images/share.png"/> 20</div>
               </div>
+            </div>
+            <hr />
+            <div className="post-row-buttons">
+              <div className="button-like">
+                <button type = "button"><img src = "Images/facebook-like-2.png" />Like</button>
+              </div>
+              <div className="button-comment">
+                <button type = "button"><img src = "Images/facebook-comment-2.png" />Comment</button>
+              </div>
+              <div className="button-share">
+                <button type = "button"><img src = "Images/facebook-share-2.png" />Share</button>
+              </div>
               <div className="post-profile-icon">
                 <img src="Images/profile-pic.png"/>
               </div>
             </div>
           </div>
 
-          <div className="post-container">
+          <div className="home-post-container">
             <div className="post-row">
               <div className="user-profile">
                 <img src="Images/member-2.png" />
@@ -165,11 +190,22 @@ const Home: NextPage = () => {
                 <div><img src="Images/comments.png"/> 20</div>
                 <div><img src="Images/share.png"/> 20</div>
               </div>
+            </div>
+            <hr />
+            <div className="post-row-buttons">
+              <div className="button-like">
+                <button type = "button"><img src = "Images/facebook-like-2.png" />Like</button>
+              </div>
+              <div className="button-comment">
+                <button type = "button"><img src = "Images/facebook-comment-2.png" />Comment</button>
+              </div>
+              <div className="button-share">
+                <button type = "button"><img src = "Images/facebook-share-2.png" />Share</button>
+              </div>
               <div className="post-profile-icon">
                 <img src="Images/profile-pic.png"/>
               </div>
             </div>
-
           </div>
 
           <button type="button" className="load-more-btn">Load More</button>
@@ -214,6 +250,18 @@ const Home: NextPage = () => {
                 <img src = "images/member-3.png" />
               </div>
               <p>Samona Rose</p>
+            </div>
+            <div className="online-list">
+              <div className="online">
+                <img src = "images/member-6.png" />
+              </div>
+              <p>Max Hawl</p>
+            </div>
+            <div className="online-list">
+              <div className="online">
+                <img src = "images/member-7.png" />
+              </div>
+              <p>Eddie Roll</p>
             </div>
         </div>
       </div>

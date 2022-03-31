@@ -16,10 +16,11 @@ nav {
     align-items: center;
     justify-content: space-between;
     background: #FFFFFF;
-    padding: 0px 1%;
+    padding: 2px 1% 0 1%;
     position: sticky;
     top: 0;
     z-index: 100;
+    box-shadow: 0 1px 3px 0 #d3d1d1
 }
 
 .logo {
@@ -34,7 +35,7 @@ nav {
 }
 
 .nav-left ul {
-    padding: 0 0 0 10px
+    padding: 0 0 0 15px
 }
 
 .nav-center ul {
@@ -54,6 +55,7 @@ nav {
 
 .nav-center button{
     border: none;
+    cursor: pointer;
     padding: 10px;
     background-color: transparent;
 }
@@ -62,32 +64,36 @@ nav {
     border-bottom: 4px solid #4a90e2;
 }
 
+.nav-center button:first-child:hover {
+    background: transparent;
+}
+
 .nav-center button:hover{
     background: #eff0f3;
-    border-radius: 4px;
+    border-radius: 8px;
     
 }
 
 .nav-center button img {
-    width: 28px;
-    height: 28px;
-    margin: 2px 30px -5px;
-    cursor: pointer;
-
+    width: 26px;
+    height: 26px;
+    margin: 2px 35px 0px;
 }
 
 
 
 
 .nav-user-icon img {
-    width: 40px;
+    width: 30px;
     border-radius: 50%;
     cursor: pointer;
 }
 
 .nav-user-name {
-    font-weight: bolder;
-    margin-left: 10px;
+    font-weight: 500;
+    font-size:15px;
+    margin-left: 5px;
+    margin-bottom:2px
 }
 
 
@@ -100,13 +106,22 @@ nav {
     padding: 2px 15px;
 }
 
-.write-post-search-box {
+.write-post-input-box {
     background: #efefef;
     width: 100%;
     border-radius: 20px;
     display: flex;
     align-items: center;
-    padding: 2px 15px;
+    padding: 2px 15px 2px 10px;
+}
+
+.write-post-search-box{
+    background: #efefef;
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 2px 15px 2px 10px;
 }
 
 .search-box img {
@@ -139,7 +154,7 @@ content:'' is a must
     background: #41bd51;
     position: absolute;
     top: 0;
-    right: 0;
+    right: -2px;
 }
 
 .notification {
@@ -161,7 +176,7 @@ content:'' is a must
 .container {
     display: flex;
     justify-content: space-between;
-    padding: 13px 1%;
+    padding: 25px 0 0 20px;
 
 }
 
@@ -179,6 +194,7 @@ content:'' is a must
     position: sticky;
     top: 70px;
     align-self: flex-start;
+    
 }
 
 .main-content {
@@ -192,7 +208,10 @@ content:'' is a must
 .pages a,
 .contacts a {
     text-decoration: none;
-    font-weight: bold;
+    line-height: 1.3333;
+    word-wrap: break-word;
+    font-size:.9375rem ;
+    font-weight: 500;
     display: flex;
     align-items: center;
     margin-bottom: 30px;
@@ -203,11 +222,12 @@ content:'' is a must
 .imp-links a img,
 .imp-links-right-sidebar a img {
     width: 25px;
-    margin-right: 15px
+    margin-right: 10px
 }
 
 .imp-links a:first-child img {
     border-radius: 50%;
+    width: 30px;
     cursor: pointer;
 }
 
@@ -219,6 +239,12 @@ content:'' is a must
     border-bottom: 1px solid #ccc
 }
 
+.shortcut-links p{
+    margin-top: 15px;
+    color: #626262;
+    font-weight: 500;
+}
+
 
 .shortcut-links a img {
     width: 40px;
@@ -226,11 +252,14 @@ content:'' is a must
     margin-right: 15px;
 }
 
+
+
 .contacts-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: #626262;
+    margin-bottom:-18px;
 }
 
 .contacts-title ul li img {
@@ -248,13 +277,21 @@ content:'' is a must
     display: inline-block
 }
 
-
-.shortcut-links p,
 .sponsored p,
-.contacts p,
-.pages p,
-.contacts-title p {
+.contacts p {
     margin: 10px 0;
+    color: #626262;
+    font-weight: 500;
+}
+
+.pages p{
+    margin: 0 0 20px 0;
+    color: #626262;
+    font-weight: 500;
+}
+
+.contacts-title p {
+    margin-top:5px;
     color: #626262;
     font-weight: 500;
 }
@@ -262,7 +299,7 @@ content:'' is a must
 .sponsored a img,
 .pages a img,
 .contacts a img {
-    width: 40px;
+    width: 30px;
     border-radius: 50%;
     margin-right: 15px;
 }
@@ -271,16 +308,15 @@ content:'' is a must
 .online-list {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
 }
 
 .online-list .online img {
-    width: 40px;
+    width: 30px;
     border-radius: 50%;
 }
 
 .online-list .online {
-    width: 40px;
+    width: 30px;
     border-radius: 50px;
     margin-right: 15px;
 }
@@ -288,6 +324,7 @@ content:'' is a must
 .online-list .online::after {
     top: unset;
     bottom: 5px;
+    
 }
 
 .story-gallery {
@@ -303,27 +340,34 @@ content:'' is a must
     background-position: center;
     background-size: cover;
     border-radius: 10px;
+    border-bottom: 2px solid #dfdfdff1;
+    border-right: 1px solid #dfdfdff1;
+    border-left: 1px solid #dfdfdff1;
 }
 
 .story img {
     position: absolute;
-    width: 45px;
+    width: 32px;
     border-radius: 50%;
     top: 10px;
     left: 10px;
-    border: 5px solid #1876f2;
+    border: 3px solid #1876f2;
 }
 
 .story p {
     position: absolute;
     bottom: 0;
+    padding-left: 10px;
+    margin-bottom: 10px;
     width: 100%;
-    text-align: center;
+    text-align: left;
     color: #fff;
     font-size: 14px;
+    font-weight: 500;
 }
 
 .story1 {
+    
     background-image: linear-gradient(transparent, rgba(0,0,0,0.5)), url('../../public/Images/status-1.png');
 }
 
@@ -343,36 +387,61 @@ content:'' is a must
 .story.story1 img {
     top: unset;
     left: 50%;
-    bottom: 35px;
+    bottom: 28px;
     transform: translateX(-50%);
-    border: 0;
+    border: 2px solid #fff;
     width: 35px;
+    z-index: 20;
+    
+}
+
+.story.story1 p {
+    text-align: center;
+    padding-left: 0;
+    padding:20px 0 10px 0;
+    margin-bottom: 0px;
+    background: #fff;
+    color: black;
+    border-radius:0 0 8px 8px ;
+}
+
+.create-story{
+ background: rgb(207, 35, 35);
+ left: 50%;
+ width: 100px;
 }
 
 .write-post-container {
     margin-left: 40px;
-    width: 80%;
+    margin-top:30px;
+    width:75%;
     background: #fff;
     border-radius: 6px;
     padding: 10px 20px;
     columns: #626262;
+    border-bottom: 2px solid #dfdfdff1;
+    border-right: 1px solid #dfdfdff1;
+    border-left: 1px solid #dfdfdff1;
 }
 
 .create-room {
     margin-top: 20px;
     margin-left: 40px;
-    width: 80%;
+    width: 75%;
     background: #fff;
     border-radius: 6px;
     padding: 10px 20px;
     columns: #626262;
     display: flex;
     align-items: center;
+    border-bottom: 2px solid #dfdfdff1;
+    border-right: 1px solid #dfdfdff1;
+    border-left: 1px solid #dfdfdff1;
 }
 
 .create-room p{
     padding: 0;
-    margin: 5px 0 0 0;
+    margin: 4px 0 0 0;
 }
 
 .create-room img {
@@ -389,10 +458,10 @@ content:'' is a must
     border: 1px solid #bfd0e7;
     border-radius:20px;
     padding: 8px 15px 10px 15px;
-    margin-right: 50px;
+    margin-right: 10px;
     display: inline-flex;
     align-items: center;
-    width:200px;
+    width:150px;
     cursor: pointer;
 }
 
@@ -404,13 +473,13 @@ content:'' is a must
 
 .write-post-container hr{
     border: 1px solid #efefef;
-    margin-top: 20px;
+    margin-top: 10px;
     width: 100%;
 }
 
-.post-container hr {
+.post-container hr, .home-post-container hr {
     border: 1px solid #efefef;
-    margin-top: 20px;
+    margin-top: 10px;
     width: 100%;
 }
 
@@ -439,7 +508,7 @@ content:'' is a must
 .user-profile input{
     width: 100%;
     background: transparent;
-    padding: 10px;
+    padding: 10px 10px 10px 5px;
     outline: none;
     font-size: 15px;
     border: 0
@@ -463,28 +532,79 @@ content:'' is a must
     justify-content: space-between;
 }
 
-.add-post-links a {
+.add-post-links button {
     text-decoration: none;
     display: flex;
     align-items: center;
     color: #626262;
     font-weight: bold;
-    margin-right: 30px;
-    font-size: 13px
+    
+    font-size: 13px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    
 }
 
-.add-post-links a img {
+.add-post-links button:hover{
+    background-color: #efefef;
+}
+
+.add-post-links button img {
     width: 30px;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 .post-container {
-    width: 80%;
+    width: 85%;
     background: #fff;
     border-radius: 6px;
-    padding: 20px;
+    padding: 20px 20px 10px 20px;
+    color: #626262;
+    margin: 20px 10px;
+    border-bottom: 2px solid #dfdfdff1;
+    border-right: 1px solid #dfdfdff1;
+    border-left: 1px solid #dfdfdff1;
+}
+
+.post-row-buttons{
+    display:flex;
+    justify-content: space-around;
+}
+
+.post-row-buttons button{
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 6px 10px;
+    display: inline-flex;
+    align-items: center;
+    color: #a5a2a2;;
+    border-radius: 5px;
+    width:100px;
+    height:35px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size:15px;
+}
+
+.post-row-buttons button img {
+    height: 20px;
+    margin-right: 8px;
+    
+}
+
+.home-post-container {
+    width: 75%;
+    background: #fff;
+    border-radius: 6px;
+    padding: 20px 20px 10px 20px;
     color: #626262;
     margin: 20px 40px;
+    border-bottom: 2px solid #dfdfdff1;
+    border-right: 1px solid #dfdfdff1;
+    border-left: 1px solid #dfdfdff1;
 }
 
 .user-profile span {
@@ -508,6 +628,10 @@ content:'' is a must
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.activity-icons{
+    margin-top:5px;
 }
 
 .activity-icons div img {
@@ -557,7 +681,7 @@ content:'' is a must
 
 
 .profile-container {
-    padding: 2px 15%;
+    padding: 2px 12% 2px 15%;
     color: #626262;
 
 }
@@ -579,6 +703,7 @@ content:'' is a must
 .profile-info-container{
     background: #fff;
     width: 100%;
+    border-bottom: 2px solid #dfdfdff1;
 }
 
 .pd-row {
@@ -589,10 +714,10 @@ content:'' is a must
 
 .pd-image {
     width: 180px;
-    margin-right: 20px;
+    margin-right: 10px;
     border: 5px solid #fff;
     border-radius: 50%;
-    margin-top: -100px
+    margin-top: -60px
 }
 
 .pd-row div h3 {
@@ -689,23 +814,25 @@ content:'' is a must
 .profile-info {
     display: flex;
     align-self: flex-start;
-    justify-content: space-between;
     margin-top: 20px;
 }
 
 .info-col {
-    flex-basis: 33%;
+    flex-basis: 44%;
 }
 
 .post-col {
-    flex-basis: 65%
+    flex-basis: 55%
 }
 
 .profile-intro {
     background: #fff;
     padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 4px;
+    border-radius: 10px;
+    margin: 0 0 15px 30px;
+    border-bottom: 2px solid #dfdfdff1;
+    border-right: 1px solid #dfdfdff1;
+    border-left: 1px solid #dfdfdff1;
 }
 
 .profile-intro h3 {
@@ -787,12 +914,15 @@ content:'' is a must
 .post-filter{
     display: flex;
     justify-content: space-around;
-    width: 80%;
+    width: 85%;
     background: #fff;
     border-radius: 6px;
     padding: 1px 20px 1px 20px;
     color: #626262;
-    margin:0px 40px;
+    margin:0px 10px;
+    border-bottom: 2px solid #dfdfdff1;
+    border-right: 1px solid #dfdfdff1;
+    border-left: 1px solid #dfdfdff1;
     
 }
 
@@ -842,7 +972,9 @@ content:'' is a must
     nav {
         padding: 1px 0
     }
-
+    .container{
+        padding:25px 0 0 0;
+    }
     .nav-center,
     
     .left-sidebar,
@@ -885,6 +1017,15 @@ content:'' is a must
         padding: 20px;
         color: #626262;
         margin:20px 15px auto 15px;
+    }
+
+    .home-post-container {
+        width: auto;
+        background: #fff;
+        border-radius: 6px;
+        padding: 20px;
+        color: #626262;
+        margin:20px 6px 0 10px
     }
 
     .post-input-container {
@@ -946,15 +1087,15 @@ content:'' is a must
         border-radius: 6px;
         padding: 20px;
         color: #626262;
-        margin: 20px 0;
+        margin:20px 6px 0 10px;
     }
 
     .create-room {
-        margin: 20px 0;
         width: auto;
         background: #fff;
         border-radius: 6px;
-        padding: 10px 20px;
+        padding: 10px;
+        margin:20px 6px 0 10px;
     }
 
     .create-room button{
@@ -984,6 +1125,10 @@ content:'' is a must
     .pd-right button img{
         margin-left: 50px;
     }
+    
+    .add-post-links button{
+        padding: 1px 0
+    }
 
 }
 
@@ -1004,6 +1149,10 @@ content:'' is a must
         display: none
     }
 
+    .container{
+        padding: 25px 0 0 0
+    }
+
     .search-box{
         width:18px;
     }
@@ -1021,22 +1170,23 @@ content:'' is a must
 
     .profile-intro{
         width: auto;
-        background: #fff;
-        border-radius: 6px;
-        padding: 20px;
-        color: #626262;
+
         margin:20px 15px auto 15px;
     }
 
 
     .post-container {
         width: auto;
-        background: #fff;
-        border-radius: 6px;
-        padding: 20px;
-        color: #626262;
+ 
         margin:20px 15px auto 15px;
     }
+
+    .home-post-container {
+        width: auto;
+      
+        margin:20px 0;
+    }
+
 
     .post-input-container {
         padding-left: 5px
@@ -1091,45 +1241,30 @@ content:'' is a must
     
     .write-post-container {
         width: auto;
-        background: #fff;
-        border-radius: 6px;
-        padding: 20px;
-        color: #626262;
         margin: 20px 0;
     }
 
     .create-room {
         margin: 20px 0;
         width: auto;
-        background: #fff;
-        border-radius: 6px;
-        padding: 10px 20px;
+        padding: 10px;
     }
 
     .create-room button{
         color: #4387e6;
-        font-weight: bold;
-        background-color: transparent;
-        border: 1px solid #bfd0e7;
-        border-radius:20px;
-        padding: 8px 15px 10px 15px;
-        margin-right: 10px;
-        display: inline-flex;
-        align-items: center;
+
         width:150px;
         
     }
 
-    
-
-    
     .create-room button img{
         width: 20px;
         border-radius:0
     }
-    
-    
-   
+
+    .add-post-links button{
+        padding: 1px 0
+    }
 
 
 }
@@ -1162,31 +1297,27 @@ content:'' is a must
         margin: 2px 10px -5px;
     }
 
-    /*
+    
     .post-filter{
-        width: 80%;
-        margin: 20px auto;
+        width: auto;
+        margin: 20px 15px auto 15px;
     }
-    */
+    
     .profile-intro{
         width: auto;
-        background: #fff;
-        border-radius: 6px;
-        padding: 20px;
-        color: #626262;
         margin:20px 15px auto 15px;
     }
 
     
     .write-post-container {
-        width: 80%;
-        background: #fff;
-        border-radius: 6px;
-        padding: 20px;
-        color: #626262;
-        margin: auto;
+        width: auto;
+        margin: 20px 15px auto 15px;
     }
 
+    .create-room{
+        width: auto;
+        margin: 20px 15px auto 15px;
+    }
 
     .story-gallery {
         display: flex;
@@ -1199,16 +1330,18 @@ content:'' is a must
         margin: auto
     }
 
-    /*
+    
     .post-container {
-        width: 80%;
-        background: #fff;
-        border-radius: 6px;
-        padding: 20px;
-        color: #626262;
-        margin-left: auto;
+        width: auto;
+        margin: 20px 15px auto 15px;
     }
-    */
+
+    .home-post-container {
+        width: auto;
+        margin: 20px 15px auto 15px;
+    }
+
+    
 /*
     .create-room img:nth-child(2){
         margin-left: 30px;       
@@ -1216,7 +1349,7 @@ content:'' is a must
     */
 
     .create-room button{
-        width:200px;
+        width:150px;
     }
   
     .post-input-container {
@@ -1259,7 +1392,8 @@ content:'' is a must
     .pd-right button{
         text-align: center;
     }
-    
+
+ 
     
 
 }
@@ -1306,22 +1440,16 @@ content:'' is a must
     
     .profile-intro{
         width: 80%;
-        background: #fff;
-        border-radius: 6px;
-        padding: 20px;
-        color: #626262;
         margin:20px auto
     }
 
     
     .write-post-container {
         width: 80%;
-        background: #fff;
-        border-radius: 6px;
-        padding: 20px;
-        color: #626262;
-        margin: auto;
+        margin: 20px 40px;
     }
+
+  
 
     .story-gallery {
         display: flex;
@@ -1337,12 +1465,24 @@ content:'' is a must
     
     .post-container {
         width: 80%;
+        margin: 20px auto;
+    }
+
+      
+    .homme-post-container {
+        width: 80%;
         background: #fff;
         border-radius: 6px;
         padding: 20px;
         color: #626262;
         margin: 20px auto;
     }
+
+
+    .home-post-container{
+        width: 80%;
+    }
+    
     
 
     .post-input-container {
@@ -1358,9 +1498,20 @@ content:'' is a must
         display:block;
     }
 
-    .create-room button{
-        width:200px;
+    .create-room{
+        width: 80%;
+        margin: 20px 40px;
     }
+
+
+    .create-room button{
+        width:150px;
+    }
+
+    .contacts-title ul{
+       padding-left: 10px;
+    }
+    
 
     
 }
@@ -1428,22 +1579,34 @@ content:'' is a must
     
     .post-filter{
         width: 80%;
-        margin: 20px auto; 
+        margin: 20px 40px; 
     }
     
 
     
     .post-container {
         width: 80%;
-        background: #fff;
-        border-radius: 6px;
-        padding: 20px;
-        color: #626262;
-        margin: 20px auto; 
+        margin: 20px 40px; 
     }
     
+    .home-post-container {
+        width: 80%;
+        margin: 20px 40px; 
+    }
+
+    .create-room{
+        width:80%;
+        margin-left:0;
+        margin: 20px 40px;
+    }
+
+    .write-post-container{
+        width: 80%;
+        margin: 20px 40px;
+    }
+
     .create-room button{
-        width:200px;
+        width:150px;
     }
 
     .post-input-container {
@@ -1453,6 +1616,11 @@ content:'' is a must
     .profile-intro{
         margin-left:20px;
     }
+
+    .contacts-title ul{
+        padding-left: 10px;
+     }
+     
 
 }
 
@@ -1472,4 +1640,41 @@ content:'' is a must
         width:18px;
     }
     
+    .write-post-container{
+        width:80%;
+        margin: 20px 40px;
+        
+    }
+
+    .create-room{
+        width:80%;
+        margin: 20px 40px;
+        
+    }
+
+    .post-input-container{
+        padding-left:10px;
+    }
+
+    .home-post-container{
+        width:80%;
+        margin: 20px 40px;
+        
+    }
+    
+}
+
+@media screen and (max-width: 1320px) and (min-width: 1260px) {
+    .add-post-links button{
+        padding-left:0 
+    }
+    .post-input-container{
+        padding-left:10px;
+    }
+    .create-room,
+    .home-post-container,
+    .write-post-container {
+        width: 80%;
+        margin: 20px 40px;
+    }
 }
