@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import LeftSidebarProfile from '../Profile Page Left Sidebar/LeftSidebarProfile';
 import PostSectionProfile from '../Profile Page Posts Section/PostSectionProfile';
 const MainContentProfile = () => {

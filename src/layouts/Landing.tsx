@@ -1,13 +1,8 @@
 import Head from 'next/head'
 import React from 'react'
+import Footer from '../components/Footer/Footer'
 //import Footer from '../components/Footer/Footer'
 import Navbar from '../components/Navbar/Navbar'
-//import { useSession } from 'next-auth/react'
-//import { H1, H3 } from '../components/Text'
-//import Index from '../components/Auth'
-
-
-
 const  Landing = ({ children, header,}: any) => {
   return (
     <div>
@@ -24,7 +19,7 @@ const  Landing = ({ children, header,}: any) => {
       <div>
         {children}
       </div>
-      
+      <Footer />
     </div>
   )
 }
