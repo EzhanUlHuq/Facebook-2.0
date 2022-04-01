@@ -9,6 +9,7 @@ const CreateRoom = () => {
             <img src = "Images/member-3.png"/>
             <img src = "Images/member-4.png"/>
             <img src = "Images/member-5.png"/>
+            <img src = "Images/member-6.png"/>
         </div>
     )
 }

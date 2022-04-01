@@ -214,7 +214,7 @@ content:'' is a must
     font-weight: 500;
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
     color: #626262;
     width: fit-content;
 }
@@ -420,7 +420,7 @@ content:'' is a must
     margin-top:20px;
     width:75%;
     background: #fff;
-    border-radius: 6px;
+    border-radius: 12px;
     padding: 10px 20px;
     columns: #626262;
     border-bottom: 2px solid #dfdfdff1;
@@ -433,7 +433,7 @@ content:'' is a must
     margin-left: 40px;
     width: 75%;
     background: #fff;
-    border-radius: 6px;
+    border-radius: 12px;
     padding: 10px 20px;
     columns: #626262;
     display: flex;
@@ -441,6 +441,10 @@ content:'' is a must
     border-bottom: 2px solid #dfdfdff1;
     border-right: 1px solid #dfdfdff1;
     border-left: 1px solid #dfdfdff1;
+}
+
+.create-room img:nth-child(7) {
+    margin-right: 0px;
 }
 
 .create-room p{
@@ -451,7 +455,7 @@ content:'' is a must
 .create-room img {
     width: 40px;
     border-radius: 50%;
-    margin-right: 15px;
+    margin-right: 13px;
     cursor: pointer;
 }
 
@@ -584,7 +588,7 @@ content:'' is a must
 .post-container {
     width: 92%;
     background: #fff;
-    border-radius: 6px;
+    border-radius: 12px;
     padding: 20px 0 10px 0;
     color: #626262;
     margin: 20px 10px;
@@ -624,7 +628,7 @@ content:'' is a must
 .home-post-container {
     width: 82%;
     background: #fff;
-    border-radius: 6px;
+    border-radius: 12px;
     padding: 20px 0 10px 0;
     color: #626262;
     margin: 20px 40px;
@@ -723,14 +727,15 @@ content:'' is a must
 
 
 .profile-container {
-    padding: 2px 12% 2px 15%;
+    padding: 0 12% 2px 15%;
     color: #626262;
 
 }
 
 .cover-img {
     width: 100%;
-    border-radius: 6px;
+    border-radius: 0 0 6px 6px
+    ;
 }
 
 .profile-details {
@@ -870,7 +875,7 @@ content:'' is a must
 .profile-intro {
     background: #fff;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 12px;
     margin: 0 0 15px 30px;
     border-bottom: 2px solid #dfdfdff1;
     border-right: 1px solid #dfdfdff1;
@@ -958,7 +963,7 @@ content:'' is a must
     justify-content: space-around;
     width: 85%;
     background: #fff;
-    border-radius: 6px;
+    border-radius: 12px;
     padding: 1px 20px 1px 20px;
     color: #626262;
     margin:0px 10px;
@@ -1153,7 +1158,9 @@ content:'' is a must
         width:150px;
         
     }
-
+    .create-room img:nth-child(7) {
+        display: none;
+    }
     
     .create-room button img{
         width: 20px;
@@ -1293,9 +1300,11 @@ content:'' is a must
 
     .create-room button{
         color: #4387e6;
-
         width:150px;
         
+    }
+    .create-room img:nth-child(7) {
+        display: none;
     }
 
     .create-room button img{
