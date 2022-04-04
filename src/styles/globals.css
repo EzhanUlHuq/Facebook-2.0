@@ -49,9 +49,17 @@ nav {
 
 .nav-left ul li img {
     margin: -20px 0px -15px;
+    width:49px;
+    height:46px;
     cursor: pointer;
 }
 
+.nav-left ul li:nth-child(2) img {
+    margin: -20px 0px -15px;
+    width:46px;
+    height:43px;
+    cursor: pointer;
+}
 
 .nav-center button{
     border: none;
@@ -348,7 +356,7 @@ content:'' is a must
 
 .story img {
     position: absolute;
-    width: 32px;
+    width:32px;
     border-radius: 50%;
     top: 10px;
     left: 10px;
@@ -429,7 +437,7 @@ content:'' is a must
 }
 
 .create-room {
-    margin-top: 20px;
+    margin-top: 15px;
     margin-left: 40px;
     width: 75%;
     background: #fff;
@@ -478,13 +486,7 @@ content:'' is a must
     border-radius:0
 }
 
-
-.write-post-container hr{
-    border: 1px solid #efefef;
-    margin-top: 10px;
-    width: 100%;
-}
-
+.write-post-container hr,
 .post-container hr, 
 .home-post-container hr {
     border: 1px solid #efefef;
@@ -591,7 +593,7 @@ content:'' is a must
     border-radius: 12px;
     padding: 20px 0 10px 0;
     color: #626262;
-    margin: 20px 10px;
+    margin: 10px;
     border-bottom: 2px solid #dfdfdff1;
     border-right: 1px solid #dfdfdff1;
     border-left: 1px solid #dfdfdff1;
@@ -631,7 +633,7 @@ content:'' is a must
     border-radius: 12px;
     padding: 20px 0 10px 0;
     color: #626262;
-    margin: 20px 40px;
+    margin: 15px 40px;
     border-bottom: 2px solid #dfdfdff1;
     border-right: 1px solid #dfdfdff1;
     border-left: 1px solid #dfdfdff1;
@@ -876,7 +878,7 @@ content:'' is a must
     background: #fff;
     padding: 20px;
     border-radius: 12px;
-    margin: 0 0 15px 30px;
+    margin: 0 0 10px 30px;
     border-bottom: 2px solid #dfdfdff1;
     border-right: 1px solid #dfdfdff1;
     border-left: 1px solid #dfdfdff1;
@@ -1049,8 +1051,8 @@ content:'' is a must
 
     .profile-intro{
         width: auto;
-        background: #fff;
-        border-radius: 6px;
+        background: #ffffff;
+        border-radius: 12px;
         padding: 20px;
         color: #626262;
         margin:20px 15px auto 15px;
@@ -1061,9 +1063,8 @@ content:'' is a must
         width: auto;
         background: #fff;
         border-radius: 6px;
-        
         color: #626262;
-        margin:20px 15px auto 15px;
+        margin:10px 15px auto 15px;
     }
 
     .home-post-container {
@@ -1097,7 +1098,7 @@ content:'' is a must
 
     .post-filter{
         width: auto;
-        margin:20px 15px auto 15px;
+        margin:10px 15px auto 15px;
     }
 
     .profile-details{
