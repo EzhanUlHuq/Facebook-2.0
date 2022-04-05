@@ -1,5 +1,5 @@
 import React from 'react';
-import PostButtons from '../../Profile Page/Profile Page Posts Section/PostButtons';
+import PostButtons from '../../Profile Page/Posts Section/PostButtons';
 import CreateRoom from './CreateRoom';
 import Stories from './Stories';
 import WritePostContainer from './WritePostContainer';
