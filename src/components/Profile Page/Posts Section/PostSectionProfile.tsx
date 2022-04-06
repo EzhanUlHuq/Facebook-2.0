@@ -1,6 +1,6 @@
 import React from 'react';
-import PostButtons from './PostButtons';
-import CommentBox from './CommentBox';
+import PostButtons from './components/PostButtons';
+import CommentBox from './components/CommentBox';
 
 const PostSectionProfile = () => {
     return(

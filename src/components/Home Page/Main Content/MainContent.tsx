@@ -1,8 +1,8 @@
 import React from 'react';
 import PostButtons from '../../Profile Page/Posts Section/PostButtons';
-import CreateRoom from './CreateRoom';
-import Stories from './Stories';
-import WritePostContainer from './WritePostContainer';
+import CreateRoom from './components/CreateRoom';
+import Stories from './components/Stories';
+import WritePostContainer from './components/WritePostContainer';
 
 
 const MainContent = () => {
